@@ -16,7 +16,6 @@
         padding: 10px;
     }
     li {
-        margin: center;
         display:inline-block;
     }
     .logo-position {
@@ -35,46 +34,56 @@
         margin-right: auto; 
         margin-bottom: 50px;
     }
-    .top-menu {
-        text-align: center;
+    #top-left {
+        text-align: left;
     }
-    .top-menu li {
+    .top-left li {
         display: inline;
-        padding: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #top-right {
+        text-align: right;
+    }
+    .top-right li {
+        display: inline;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .search {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    .bottom-menu {
+    #bottom-menu {
         text-align: center;
         padding-top: 35%;
     }
     .search {
         width: 500px;
+        align-items: center;
     }
 
 </style>
 <body>
     <header>
-        <ul class="top-menu">
+        <ul id="top-left">
             <li><a href="about.asp">About</a></li>
             <li><a href="store.asp">Store</a></li>
+        </ul>
+        <ul id="top-right">
             <li><a href="gmail.asp">Gmail</a></li>
             <li><a href="images.asp">Images</a></li>
         </ul>
     </header>
-<div id="logo">
+<center>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo-position">
-</div>
+</center>
+
 <input class="search" type="text">
 
-
     <footer>
-        <nav class="bottom-menu">
+        <ul id="bottom-menu">
             <li>Advertising</li>
             <li>Business</li>
             <li>How Search Works</li>
