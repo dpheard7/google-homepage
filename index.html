@@ -6,23 +6,75 @@
     <title>dpheard7 google-homepage</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<style>
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    ul {
+        margin: 0;
+        padding: 10px;
+    }
+    li {
+        margin: center;
+        display:inline-block;
+    }
+    .logo-position {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        padding-top: 25%;
+    }
+    header {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 50px;
+    }
+    .top-menu {
+        text-align: center;
+    }
+    .top-menu li {
+        display: inline;
+        padding: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .search {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bottom-menu {
+        text-align: center;
+        padding-top: 35%;
+    }
+    .search {
+        width: 500px;
+    }
+
+</style>
 <body>
     <header>
-        <ul>
-            <li>About</li>
-            <li>Store</li>
-            <li>Gmail</li>
-            <li>Images</li>
+        <ul class="top-menu">
+            <li><a href="about.asp">About</a></li>
+            <li><a href="store.asp">Store</a></li>
+            <li><a href="gmail.asp">Gmail</a></li>
+            <li><a href="images.asp">Images</a></li>
         </ul>
     </header>
 <div id="logo">
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo-position">
 </div>
-<input type="text">
+<input class="search" type="text">
 
 
     <footer>
-        <ul>
+        <nav class="bottom-menu">
             <li>Advertising</li>
             <li>Business</li>
             <li>How Search Works</li>
